@@ -1,5 +1,5 @@
 # Bond Portfolio Market Risk Analysis
-I used Python to create a scenario analysis measuring portfolio value flucuations of 100,000 different tenored zero coupon bonds. The underlying data is generated stochastically. I assumed no credit risk and the yield curve steps up by tenor to resemble a normal yield curve. This list of individual bonds is unweighted and assumes a lot size of one for each bond. It contains tenor, yield, an assumed par value of $100, and the calculated bond price, modified duration and convexity. Because I assume a uniform lot size per bond, these bonds are able to be aggregated by tenor to calculate portfolio weights, market value, average yield and total modified duration and convexity. Please see the outputs folder for raw data, portfolio aggregation and plots.
+I used Python to create a scenario analysis measuring portfolio value flucuations of 100,000 different tenored zero coupon bonds. The underlying data is generated stochastically. I assumed no credit risk and the yield curve roughly steps up by tenor to resemble a normal yield curve. This list of individual bonds is weighted by tenor and it assumes a lot size of one purchase at par for each bond. It contains tenor, yield, an assumed par value of $100, and the calculated bond price, modified duration and convexity. Because I assume a uniform lot size per bond, these bonds are able to be aggregated by tenor to calculate portfolio weights, market value, average yield and total modified duration and convexity. Please see the outputs folder for raw data, portfolio aggregation and the final plots.
  
 ## Raw Data and Portfolio Table
 | Bond Tenor | Theoretical Weights | Realized Weights | Market Value | Average Yield 
@@ -20,4 +20,4 @@ I used Python to create a scenario analysis measuring portfolio value flucuation
 ## References
 - [Present Value of a Zero Coupon Bond](https://www.wallstreetprep.com/knowledge/zero-coupon-bond/)
 - [Duration and Convexity of a Bond Portfolio](https://analystprep.com/cfa-level-1-exam/fixed-income/duration-and-convexity-of-a-bond-portfolio/)
-- [Yield Curve](https://www.investopedia.com/terms/y/yieldcurve.asp)
+- [Yield Curves](https://www.investopedia.com/terms/y/yieldcurve.asp)
