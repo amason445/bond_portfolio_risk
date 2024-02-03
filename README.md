@@ -1,4 +1,4 @@
-# Bond Portfolio Market Risk Analysis
+# Zero Coupon Bond Portfolio - Market Risk Analysis
 I used Python to create a scenario analysis measuring portfolio value flucuations of 100,000 different tenored zero coupon bonds. The underlying data is generated stochastically. I assumed no credit risk and the yield curve roughly steps up by tenor to resemble a normal yield curve. This list of individual bonds is weighted by tenor and it assumes a lot size of one purchase at par for each bond. It contains tenor, yield, an assumed par value of $100, and the calculated bond price, modified duration and convexity. Because I assume a uniform lot size per bond, these bonds are able to be aggregated by tenor to calculate portfolio weights, market value, average yield and total modified duration and convexity. Please see the outputs folder for raw data, portfolio aggregation and the final plots.
  
 ## Raw Data and Portfolio Table
