@@ -16,3 +16,8 @@ I used Python to create a scenario analysis measuring portfolio value flucuation
 ## Portfolio Scenario Test
 
 ![alt_text](https://github.com/amason445/bond_portfolio_risk/blob/main/outputs/portfolio_value_change.png)
+
+## References
+- [Present Value of a Zero Coupon Bond](https://www.wallstreetprep.com/knowledge/zero-coupon-bond/)
+- [Duration and Convexity of a Bond Portfolio](https://analystprep.com/cfa-level-1-exam/fixed-income/duration-and-convexity-of-a-bond-portfolio/)
+- [Yield Curve](https://www.investopedia.com/terms/y/yieldcurve.asp)
