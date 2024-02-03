@@ -11,8 +11,8 @@ I used Python to create a scenario analysis measuring portfolio value flucuation
 
 ## Average Portfolio Yield Curve
 
-[!alt text](https://github.com/amason445/bond_portfolio_risk/blob/main/outputs/portfolio_yield_curve.png)
+![alt text](https://github.com/amason445/bond_portfolio_risk/blob/main/outputs/portfolio_yield_curve.png)
 
 ## Portfolio Scenario Test
 
-[!alt_text](https://github.com/amason445/bond_portfolio_risk/blob/main/outputs/portfolio_value_change.png)
+![alt_text](https://github.com/amason445/bond_portfolio_risk/blob/main/outputs/portfolio_value_change.png)
