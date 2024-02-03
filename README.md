@@ -19,5 +19,6 @@ I used Python to create a scenario analysis measuring portfolio value flucuation
 
 ## References
 - [Present Value of a Zero Coupon Bond](https://www.wallstreetprep.com/knowledge/zero-coupon-bond/)
+- [Jorion - FRM Handbook](https://www.google.com/books/edition/Financial_Risk_Manager_Handbook/4ceVmGJSNpcC?hl=en)
 - [Duration and Convexity of a Bond Portfolio](https://analystprep.com/cfa-level-1-exam/fixed-income/duration-and-convexity-of-a-bond-portfolio/)
 - [Yield Curves](https://www.investopedia.com/terms/y/yieldcurve.asp)
