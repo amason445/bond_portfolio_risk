@@ -8,3 +8,6 @@ I used Python to create a scenario analysis measuring portfolio value flucuation
 | 5 | 30% | 30% | $2,385,093.46 | 4.76% |
 | 10 | 30% | 31% | $1,558,355.91 | 7.00% |
 | 30 | 20% | 20% | $102,230.52 | 10.51% |
+
+## Average Yield Curve
+
