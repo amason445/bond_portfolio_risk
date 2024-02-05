@@ -41,20 +41,18 @@ def bond_convexity(bond_tenor, bond_yield):
 """
 This function is applied to the raw bond list to aggregate it by tenor. 
 It's a piece wise function that creates multiple columns in the new dataframe.
-It counts the total bonds by tenor, sums the market value, and averages yield.
-It also sums duration and convexity. 
-Since this is aggregating raw bonds at equal weight, these columns are directly summed.
+It counts the total bonds by tenor, sums the market value, and averages yield, duration and convexity.
 """
 def tenor_aggregations(x):
     d = {}
     d['tenor_count'] = x['bond_tenor'].count()
     d['market_value'] = round(x['bond_price'].sum(),2)
     d['average_yield'] = round(x['bond_yield'].mean(),2)
-    d['tenor_duration'] = round(x['bond_modified_duration'].sum(), 2)
-    d['tenor_convexity'] = round(x['bond_convexity'].sum(), 2)
+    d['tenor_duration'] = round(x['bond_modified_duration'].sum() / d['tenor_count'] , 2)
+    d['tenor_convexity'] = round(x['bond_convexity'].sum() / d['tenor_count'], 2)
     return pd.Series(d, index=['tenor_count', 'market_value', 'average_yield', 'tenor_duration', 'tenor_convexity'])
 
 #this function is applied when plotting the portfolio value change of each bond tenor against yield change
 def portfolio_value_change(tenor_duration, tenor_convexity, yield_change):
-    return (-1 * tenor_duration * yield_change) + (0.5 * tenor_convexity * (yield_change ** 2)) * 100
+    return (-tenor_duration * yield_change) + (0.5 * tenor_convexity * (yield_change ** 2))
         
