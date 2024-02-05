@@ -4,10 +4,11 @@ I used Python to create a scenario analysis measuring portfolio value flucuation
 ## Raw Data and Portfolio Table
 | Bond Tenor | Theoretical Weights | Realized Weights | Market Value | Average Yield | Average Modified Duration | Average Convexity |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| 3 | 20% | 19% | $1,755,404.51 | 2.49% | 2.93 | 11.42 |
-| 5 | 30% | 30% | $2,385,093.46 | 4.76% | 4.77 | 27.34 |
-| 10 | 30% | 31% | $1,558,355.91 | 7.00% | 9.35 | 96.09 |
-| 30 | 20% | 20% | $102,230.52 | 10.51% | 27.15 | 761.67 |
+| 3 | 10% | 10% | $932,365.34 | 2.50% | 2.93 | 11.42 |
+| 5 | 30% | 30% | $2,454,568.25 | 4.00% | 4.81 | 27.74 |
+| 10 | 30% | 30% | $1,669,604.53 | 6.00% | 9.43 | 97.9 |
+| 20 | 10% | 10% | $218,204.59 | 8.00% | 18.52 | 360.07 |
+| 30 | 20% | 20% | $132,170.94 | 9.5% | 27.4 | 775.64 |
 
 ## Average Portfolio Yield Curve
 
