@@ -4,8 +4,8 @@ import pandas as pd
 
 #this function generates a random distribution of zero coupon bonds by bond tenor, tenor weight and portfolio size
 def random_bond_tenors(bond_number: int):
-    bond_tenors = [3,5,10,30]
-    sample_probabilities = [0.20, 0.30, 0.30, 0.20]
+    bond_tenors = [3,5,10,20,30]
+    sample_probabilities = [0.10, 0.30, 0.30, 0.10, 0.20]
     return np.random.choice(bond_tenors, size = bond_number, p = sample_probabilities)
 
 #this function maps each bond tenor to a stochastic, normal yield curve. the yield curve steps up with tenor
@@ -14,11 +14,13 @@ def random_yield(tenor: int) -> float:
         case 3:
             return rnd.uniform(2.0, 3.0)
         case 5:
-            return rnd.uniform(4.0, 5.5)
+            return rnd.uniform(3.5, 4.5)
         case 10:
-            return rnd.uniform(6.0, 8.00)
+            return rnd.uniform(5.5, 6.5)
+        case 20:
+            return rnd.uniform(7.5, 8.5)
         case 30:
-            return rnd.uniform(10.00, 11.00)
+            return rnd.uniform(9, 10)
         
 #this function calculates the current bond price using yield, tenor and an assumed par value of 100
 def bond_price(par_value, bond_yield, bond_tenor):
