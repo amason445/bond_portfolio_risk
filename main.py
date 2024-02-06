@@ -36,7 +36,7 @@ for index, row in tenor_df.iterrows():
     price_changes = [(func.portfolio_value_change(row['tenor_duration'], row['tenor_convexity'], i)) * 100 for i in yield_changes_decimal]
     plt.plot(yield_changes_pct , price_changes, label = f"Bond Tenor - {int(row['bond_tenor'])} years")
 
-plt.title('Portfolio Value Change Across Different Yield Changes')
+plt.title('Portfolio Value Change Across Different Bond Maturities')
 plt.xlabel('Change in Yield (%)')
 plt.ylabel('Change in Portfolio Value (%)')
 plt.legend()
